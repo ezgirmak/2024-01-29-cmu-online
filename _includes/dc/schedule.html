@@ -63,52 +63,36 @@ The schedule for the different curricula are listed here:
 
 {% elsif site.curriculum == "dc-ecology" %}
 <div class="row">
-  <div class="col-md-6">
+  <div class="col-md-4">
     <h3>Day 1</h3>
     <table class="table table-striped">
-      <tr>
-	<td>Before starting</td>
-	<td><a href="{{ site.pre_survey }}{{ site.github.project_title }}" target="_blank">Pre-workshop survey</a></td>
-      </tr>
-      <tr><td>Morning</td> <td> <a href="https://datacarpentry.org/spreadsheet-ecology-lesson/">Data Organization in Spreadsheets</a></td></tr>
-      <tr><td> </td><td><a href="https://datacarpentry.org/OpenRefine-ecology-lesson/">OpenRefine for Data Cleaning</a></td></tr>
-      <tr>
-        <td>Afternoon</td>
-        <td>
-          {% if site.flavor == "r" %}
-          <a href="https://datacarpentry.org/R-ecology-lesson/">Introduction to R</a>
-          {% elsif site.flavor == "python" %}
-          <a href="https://datacarpentry.org/python-ecology-lesson/">Introduction to Python</a>
-          {% else %}
-          {% include warning-flavor.html %}
-          {% endif %}
-      </td></tr>
-      <tr> <td>Evening</td> <td>END</td> </tr>
+      <tr> <td>Before </td> <td><a href="{{ site.pre_survey }}{{ site.github.project_title }}" target="_blank" rel="noopener noreferrer"> Pre-workshop survey</a> </td> </tr>
+      <tr> <td>09:00 </td>  <td> Setup & Code of Conduct </td> </tr>
+      <tr> <td>09:10</td>  <td> <a href="https://datacarpentry.org/python-ecology-lesson/00-before-we-start/index.html"> Before we start </a> </td> </tr>
+      <tr> <td>09:45 </td>  <td> <a href="https://datacarpentry.org/python-ecology-lesson/01-short-introduction-to-Python/index.html"> Short Introduction to Programming in Python  </a> </td> </tr>
+      <tr> <td>10:30</td>  <td>Morning break</td> </tr>
+      <tr> <td>11:00</td>  <td><a href="https://datacarpentry.org/python-ecology-lesson/02-starting-with-data/index.html"> Starting With Data </a> </td> </tr> 
+      <tr> <td>12:00</td>  <td>Wrap-up</td> </tr>
+      <tr> <td>12:15</td>  <td>END</td> </tr>
     </table>
   </div>
-  <div class="col-md-6">
+  <div class="col-md-4">
     <h3>Day 2</h3>
     <table class="table table-striped">
-      <tr> <td>Morning</td>
-        <td>
-          {% if site.flavor == "r" %}
-          <a href="https://datacarpentry.org/R-ecology-lesson/">Continuation of R: Data analysis and Visualization</a>
-          {% elsif site.flavor == "python" %}
-          <a href="https://datacarpentry.org/python-ecology-lesson/">Continuation of Python: Data analysis and Visualization</a>
-          {% else %}
-          {% include warning-flavor.html %}
-          {% endif %}
-        </td>
-      </tr>
-      <tr> <td>Afternoon</td><td><a href="https://datacarpentry.org/sql-ecology-lesson/">Data Management with SQL</a></td></tr>
-      <tr>
-	<td>Evening</td>
-	<td><a href="{{ site.post_survey }}{{ site.github.project_title }}" target="_blank">Post-workshop survey</a></td>
-      </tr>
-      <tr>
-	<td> </td>
-	<td> END </td>
-      </tr>
+     <tr> <td>09:00</td>  <td><a href="https://datacarpentry.org/python-ecology-lesson/04-data-types-and-format/index.html"> Data Types and Formats</a> </td> </tr>
+     <tr> <td>10:15</td>  <td> <a href="https://datacarpentry.org/python-ecology-lesson/03-index-slice-subset/index.html"> Indexing, Slicing and Subsetting DataFrames in Python(continued) </a> </td> </tr>
+     <tr> <td>11:15</td>  <td><a href="https://datacarpentry.org/python-ecology-lesson/05-merging-data/index.html"> Combining DataFrames with Pandas </a> </td> </tr>
+     <tr> <td>12:00</td>  <td>Wrap-up</td> </tr>
+     <tr> <td>12:15</td>  <td>END</td> </tr>
+    </table>
+  </div>
+	<div class="col-md-4">
+    <h3>Day 3</h3>
+    <table class="table table-striped">
+      <tr> <td>09.00</td>  <td> <a href="https://datacarpentry.org/python-ecology-lesson/06-loops-and-functions/index.html"> Data Workflows and Automation </a> </td> </tr>
+      <tr> <td>11:00</td>  <td><a href="https://datacarpentry.org/python-ecology-lesson/08-putting-it-all-together/index.html"> Data Ingest and Visualization - Matplotlib and Pandas </a> </td> </tr>
+      <tr> <td>12:30</td>  <td><a href="{{ site.post_survey }}{{ site.github.project_title }}" target="_blank" rel="noopener noreferrer">Post-workshop Survey</a></td> </tr>
+      <tr> <td>12:40</td>  <td>END</td> </tr>
     </table>
   </div>
 </div>
